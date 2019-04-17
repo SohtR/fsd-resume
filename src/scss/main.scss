@@ -1,3 +1,269 @@
-div {
-    color: red;
+@font-face {
+	font-family: 'MyriadProSE';
+	src: url('../fonts/MyriadProSE/MyriadProSE.eot');
+  src: url('../fonts/MyriadProSE/MyriadProSE.woff') format('woff'),
+       url('../fonts/MyriadProSE/MyriadProSE.ttf') format('truetype'),
+       url('../fonts/MyriadProSE/MyriadProSE.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro/Myriad-Pro.eot');
+  src: url('../fonts/MyriadPro/Myriad-Pro.woff') format('woff'),
+       url('../fonts/MyriadPro/Myriad-Pro.ttf') format('truetype'),
+       url('../fonts/MyriadPro/Myriad-Pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadProBold';
+	src: url('../fonts/MyriadProBold/MyriadPro-Bold.eot');
+  src: url('../fonts/MyriadProBold/MyriadPro-Bold.woff') format('woff'),
+       url('../fonts/MyriadProBold/MyriadPro-Bold.ttf') format('truetype');
+       
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin border1px {
+  border:1px solid black;
+}
+
+body,p {
+    margin:0;
+    padding: 0;
   }
+main{
+  display: flex;
+}
+.column-left{
+   
+   width:44.5%;
+    
+   
+  }
+.column-right{
+  
+  flex-basis: 55.5%;
+}
+
+.wrapper{
+  margin: 137px auto 0 auto;
+  width: 81.6%;
+  
+}
+
+.main-info{
+  width:101%;
+}
+
+.circle-outer{
+  border: 1px solid #3d6cb0;
+  border-radius: 50%;
+  width: 357px;
+  height: 358px;
+  margin: auto;
+  padding:21px;
+  box-sizing: border-box;
+}
+
+.circle-inner{
+  border: 157px solid #3d6cb0;
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+}
+
+.name-info{
+  margin:39px 0 0 5px;
+  
+}
+
+.name,
+ .surname,
+ .jobTitle{
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: -1px;
+   
+ }
+
+.name{
+  font: 300 81px 'MyriadProSE', Times, serif;
+  padding: 0 3px 0 0;
+}
+.surname{
+  font: 700 94px 'MyriadProBold', Times, serif;
+  line-height: 67px;
+  padding: 0px 5px 0 0;
+}
+.jobTitle{
+  font: 700  38.7px 'MyriadProBold', Times, serif;
+  letter-spacing: -1.5px;
+  margin:22px 0 0 0;
+  padding: 0 4px 0 0px;
+}
+
+.line{
+  width: 80%;
+  height: 8px;
+  background-color:#3d6cb0;
+  position: absolute;
+  top: 54px;
+  left:79px;
+  z-index:-1;
+}
+
+.icon{
+  background-size: 111px 111px;
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 111px;
+  height: 111px;
+}
+
+.title{
+  color: #3d6cb0;
+  font:bolder 64px 'MyriadProBold', Times, serif;
+  margin: 0;
+  width:252px;
+  padding: 23px 0 35px 133px;
+  letter-spacing: -1px;
+  background-color: white;
+  }
+
+.profile-info{
+  width:100%;
+  margin: 113px auto 0 auto;
+  padding: 0 20px 0 9px;
+  position: relative;
+    p{
+      font-family: 'MyriadPro', Times, serif;
+      font-size: 1.5em;
+      color: #000000;
+      padding: 0 32px 0 5px;
+      line-height: 28.5px;
+      width:93%;
+        b{
+          font-weight: 700;
+          letter-spacing: 0.3px;
+          line-height: 27px;
+        }
+    }
+    .icon{
+      background: white url(../img/pi.svg) no-repeat;
+      background-size: 115px 111px;
+      width: 115px;
+    }
+}
+
+.contact-info{
+  width:100%;
+  margin: 66px auto 0 auto;
+  padding: 0 20px 0 9px;
+  position: relative;
+  .line{
+        left:89px;
+     }
+  .title{
+      width:282px;
+    }
+  .icon{
+      background: white url(../img/phone_icon.svg) no-repeat;
+      background-size: 111px 111px;
+      width: 111px;
+      height: 111px;
+    }
+  
+  table{
+    margin: 28px 0 0 0;
+  }
+   
+  td{
+    font: 400 32px 'MyriadPro', Times, serif;
+    padding: 0 61px 40px 2px;
+    line-height: 41.5px;
+  }
+  
+  td:first-child{
+    color: #3d6cb0;
+    text-transform: uppercase;
+    font: 700 32px 'MyriadProBold', Times, serif;
+    padding: 0 61px 40px 4px;
+    letter-spacing: -1px;
+  }
+}
+
+.skills{
+  margin: 26px 0 0 0;
+  padding: 0 20px;
+  position: relative;
+  .line{
+        left:99px;
+      }
+   .title{
+      width:212px;
+      padding: 20px 0 35px 120px;
+      text-align: left;
+    }
+  .icon{
+      background: white url(../img/skills_icon.svg) no-repeat;
+      background-size: 111px 111px;
+      width: 111px;
+      height: 111px;
+    }
+  p{
+    font:400 40px 'MyriadPro', Times, serif;
+    text-align: center;
+    padding: 25.5px 21px 0 0;
+  }
+  p:first-of-type{
+    font:400 40px 'MyriadPro', Times, serif;
+    text-align: center;
+    padding: 18px 17px 0 0;
+  }
+  ul{
+    list-style: none;
+    margin: 14px 0 0 24px;
+  }
+  ul li{
+    display: inline-block;
+    width:27px;
+    height: 27px;
+    background: #3d6cb0;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+
+  }
+  ul li.inactive{
+    background: #e6e6e6;
+  }
+  ul:last-of-type{
+    margin: 11px 0 0 24px;
+  }
+}
+
+.education-info{
+  position: relative;
+  margin: 113px auto;
+  .title{
+    width: 355px;
+    padding: 20px 0 0 147px;
+    letter-spacing: -1.2px;
+  }
+  .icon{
+    background: white url(../img/education_icon.svg) no-repeat;
+      background-size: 115px 111px;
+      width: 115px;
+      height: 111px;
+      left: 4px;
+  }
+  .line{
+    width: 90%;
+    left: 33px;
+  }
+}

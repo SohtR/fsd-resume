@@ -29,6 +29,16 @@ module.exports = {
         options: {
             pretty: true
         }
+      
+    },
+    {
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      use: [
+               {
+                   loader: 'file-loader?name=./fonts/[name]/[name].[ext]'
+               }
+               
+           ]
     }
     ]
   },
