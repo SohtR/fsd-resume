@@ -1,3 +1,18 @@
+mixin skillList(name)
+    ul(class=name)
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+
 doctype html
 html
     head
@@ -44,63 +59,86 @@ html
                         .icon
                         h3.title SKILLS
                         p CREATIVE
-                        ul
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li.inactive
-                            li.inactive
-                            li.inactive
+                        +skillList('creative')
                         p TEAMWORK
-                        ul
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li.inactive
+                        +skillList('teamwork')
                         p INNOVATE
-                        ul
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li.inactive
-                            li.inactive
-                            li.inactive
-                            li.inactive
-                            li.inactive
-                            li.inactive
+                        +skillList('innovate')
                         p COMMUNICATION
-                        ul
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li
-                            li.inactive
+                        +skillList('communication')
             .column-right
                 .education-info
                     .line
                     .icon
                     h3.title EDUCATION
+                    ul.education
+                        li.education-block 
+                            .blackpoint
+                            p.degree-date <span class="degree"> Master degree</span> // Feb 2011-Jun 2014
+                            p.university University name
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="degree"> Master degree</span> // Feb 2011-Jun 2014
+                            p.university University name
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="degree"> Master degree</span> // Feb 2011-Jun 2014
+                            p.university University name
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="degree"> Master degree</span> // Feb 2011-Jun 2014
+                            p.university University name
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                .experience-info
+                    .line
+                    .icon
+                    h3.title EXPERIENCE
+                    ul.experience
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="company"> company name</span> // Feb 2011-Jun 2014
+                            p.university your job here
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="company"> company name</span> // Feb 2011-Jun 2014
+                            p.university your job here
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education-block
+                            .blackpoint
+                            p.degree-date <span class="company"> company name</span> // Feb 2011-Jun 2014
+                            p.university your job here
+                            p.education-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                .software
+                    .line
+                    .icon
+                    h3.title SOFTWARE
+                    .soft-wrapper
+                        .software-skill
+                            h3.softname photoshop
+                            .greyline
+                                .blueline._915
+                        .software-skill
+                            h3.softname dreamweaver
+                            .greyline
+                                .blueline._83
+                        .software-skill
+                            h3.softname illustrator
+                            .greyline
+                                .blueline._71
+                        .software-skill
+                            h3.softname after effects
+                            .greyline
+                                .blueline._62
+                        .software-skill
+                            h3.softname indesign
+                            .greyline
+                                .blueline._57
+                        .software-skill
+                            h3.softname html&css3
+                            .greyline
+                                .blueline._91
+

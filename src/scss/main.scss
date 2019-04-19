@@ -38,6 +38,7 @@ body,p {
   }
 main{
   display: flex;
+  flex-wrap: wrap;
 }
 .column-left{
    
@@ -228,7 +229,8 @@ main{
   }
   ul{
     list-style: none;
-    margin: 14px 0 0 24px;
+    margin: 14px 51px 0 0px;
+    text-align: center;
   }
   ul li{
     display: inline-block;
@@ -239,17 +241,21 @@ main{
     margin: 0 12px 0 0;
 
   }
-  ul li.inactive{
+  .creative li:nth-child(n+10),
+  .teamwork li:nth-child(12),
+  .innovate li:nth-child(n+7),
+  .communication li:nth-child(12){
     background: #e6e6e6;
   }
+  
   ul:last-of-type{
-    margin: 11px 0 0 24px;
+    margin: 11px 51px 0 0;
   }
 }
 
 .education-info{
   position: relative;
-  margin: 113px auto;
+  margin: 113px auto 0 auto;
   .title{
     width: 355px;
     padding: 20px 0 0 147px;
@@ -266,4 +272,170 @@ main{
     width: 90%;
     left: 33px;
   }
+}
+
+.education-content{
+  font:400 24px 'MyriadProSE', Times, serif;
+  letter-spacing: -1px;
+  margin: 0 0 0 3px;
+}
+
+.blackpoint{
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: #000000;
+  top:11px;
+  left:-63px;
+}
+.degree-date{
+  font:400 40px 'MyriadProSE', Times, serif;
+  letter-spacing: -0.5px;
+  margin: 0;
+  
+}
+.university{
+  text-transform: uppercase;
+  font:400 40px 'MyriadPro', Times, serif;
+  margin: 1px 0 10px 0;
+  letter-spacing: 0px;
+}
+.education-block{
+  position: relative;
+  padding:0 0 0 0;
+  margin:20px 0 0 0;
+  width: 885px;
+}
+
+.education{
+  list-style: none;
+  font-size:82px;
+  margin: 57px 0 0 86px;
+  padding: 0px;
+}
+.degree{
+  font:700 40px 'MyriadProBold', Times, serif;
+  color: #3d6cb0;
+  text-transform: uppercase;
+  letter-spacing: -0.9px;
+  margin: 0 15px 0 0;
+}
+
+.experience-info{
+  margin:66px 0 0 13px;
+  position: relative;
+  .icon{
+    background: white url(../img/experience_icon.svg) no-repeat;
+    background-size: 118px 115px;
+    width: 118px;
+    height: 115px;
+    top:4px;
+    left: -8px;
+  }
+  .line{
+    width: 90%;
+    left: 33px;
+    top: 57px;
+  }
+  .title{
+    width: 357px;
+    padding: 24px 0 36px 133px;
+    letter-spacing: -1.2px;
+  }
+}
+
+.experience{
+  list-style: none;
+  font-size:82px;
+  margin: 44px 0 0 73px;
+  padding: 0px;
+}
+
+.company{
+  font:700 40px 'MyriadProBold', Times, serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.9px;
+  margin: 0 15px 0 0;
+}
+
+.software{
+  margin: 69px 0 0 14px;
+  position: relative;
+  
+  .icon{
+    background: white url(../img/software_icon.svg) no-repeat;
+    background-size: 115px 111px;
+    width: 115px;
+    height: 111px;
+    top:3px;
+    left: -9px;
+  }
+  .line{
+    width: 90%;
+    left: 31px;
+    top: 57px;
+  }
+  .title{
+    width: 354px;
+    padding: 24px 0 51px 133px;
+    letter-spacing: -1.2px;
+  }
+}
+.software-skill{
+  padding: 1px 0 0 2px;
+  width: 41%;
+  margin: 0 107px 30px 0;
+  
+}
+.software-skill:nth-child(even){
+  
+  margin: 0 0 30px 0;
+  
+}
+
+.soft-wrapper{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.softname{
+  text-transform: uppercase;
+  font:400 40px 'MyriadPro', Times, serif;
+  margin: 1px 0 10px 0;
+  letter-spacing: 0px;
+}
+.greyline{
+  position: relative;
+  max-width: 428px;
+  height: 34px;
+  background: #e6e6e6;
+  margin: 20px 0 0 0;
+}
+.blueline{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background: #3d6cb0;
+  height: 34px;
+}
+._915{
+  width: 91.5%;
+}
+._83{
+  width: 83%;
+}
+._71{
+  width: 71%;
+}
+._57{
+  width: 57%;
+}
+._62{
+  width: 62%;
+}
+._91{
+  width: 91%;
 }
