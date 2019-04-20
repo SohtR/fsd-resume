@@ -28,10 +28,6 @@
 	font-style: normal;
 }
 
-@mixin border1px {
-  border:1px solid black;
-}
-
 body,p {
     margin:0;
     padding: 0;
@@ -40,43 +36,95 @@ main{
   display: flex;
   flex-wrap: wrap;
 }
-.column-left{
-   
-   width:44.5%;
-    
-   
-  }
-.column-right{
-  
-  flex-basis: 55.5%;
-}
-
-.wrapper{
-  margin: 137px auto 0 auto;
-  width: 81.6%;
-  
-}
-
-.main-info{
-  width:101%;
+.column{
+  width: 100%;
+  padding: 0 20px 20px 20px;
 }
 
 .circle-outer{
   border: 1px solid #3d6cb0;
   border-radius: 50%;
-  width: 357px;
-  height: 358px;
+  width: 178px;
+  height: 178px;
   margin: auto;
-  padding:21px;
+  padding:10.5px;
   box-sizing: border-box;
 }
 
 .circle-inner{
-  border: 157px solid #3d6cb0;
+  border: 78px solid #3d6cb0;
   border-radius: 50%;
   width: 0px;
   height: 0px;
 }
+.name{
+  font: 300 40px 'MyriadProSE', Times, serif;
+  padding: 0 3px 0 0;
+}
+.surname{
+  font: 700 47px 'MyriadProBold', Times, serif;
+  line-height: 33px;
+  padding: 0px 5px 0 0;
+}
+.jobTitle{
+  font: 700  19px 'MyriadProBold', Times, serif;
+  letter-spacing: -1.5px;
+  margin:11px 0 0 0;
+  padding: 0 4px 0 0px;
+}
+@media screen and (min-width: 500px) {
+  .circle-outer{
+    border: 1px solid #3d6cb0;
+    border-radius: 50%;
+    width: 357px;
+    height: 358px;
+    margin: auto;
+    padding:21px;
+    box-sizing: border-box;
+  }
+  .circle-inner{
+    border: 157px solid #3d6cb0;
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+  }
+  .name{
+    font: 300 81px 'MyriadProSE', Times, serif;
+    padding: 0 3px 0 0;
+  }
+  .surname{
+    font: 700 94px 'MyriadProBold', Times, serif;
+    line-height: 67px;
+    padding: 0px 5px 0 0;
+  }
+  .jobTitle{
+    font: 700  38.7px 'MyriadProBold', Times, serif;
+    letter-spacing: -1.5px;
+    margin:22px 0 0 0;
+    padding: 0 4px 0 0px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .column{
+    padding: 0;
+  }
+  .column-left{
+    width: 36.3%;
+  } 
+  .column-right{
+    width: 55.5%;
+  }
+}
+
+.column-left{
+    margin: 137px auto 0 auto;
+  }
+
+.main-info{
+  width:101%;
+}
+
+
 
 .name-info{
   margin:39px 0 0 5px;
@@ -92,21 +140,7 @@ main{
    
  }
 
-.name{
-  font: 300 81px 'MyriadProSE', Times, serif;
-  padding: 0 3px 0 0;
-}
-.surname{
-  font: 700 94px 'MyriadProBold', Times, serif;
-  line-height: 67px;
-  padding: 0px 5px 0 0;
-}
-.jobTitle{
-  font: 700  38.7px 'MyriadProBold', Times, serif;
-  letter-spacing: -1.5px;
-  margin:22px 0 0 0;
-  padding: 0 4px 0 0px;
-}
+
 
 .line{
   width: 80%;
@@ -256,6 +290,7 @@ main{
 .education-info{
   position: relative;
   margin: 113px auto 0 auto;
+  width: 100%;
   .title{
     width: 355px;
     padding: 20px 0 0 147px;
@@ -278,6 +313,7 @@ main{
   font:400 24px 'MyriadProSE', Times, serif;
   letter-spacing: -1px;
   margin: 0 0 0 3px;
+  width:98%;
 }
 
 .blackpoint{
@@ -305,7 +341,7 @@ main{
   position: relative;
   padding:0 0 0 0;
   margin:20px 0 0 0;
-  width: 885px;
+  width: 93%;
 }
 
 .education{
@@ -313,6 +349,7 @@ main{
   font-size:82px;
   margin: 57px 0 0 86px;
   padding: 0px;
+  width: 90%;
 }
 .degree{
   font:700 40px 'MyriadProBold', Times, serif;
